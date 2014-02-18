@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Boilerplate</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="src/jquery.form-json.js"></script>
+</head>
+<body>
+
+	<form name="example" method="POST">
+
+		<div>
+			<label for="textInput1"></label>
+			<input type="text" name="textInput">
+		</div>
+
+		<div>
+			<label for="radioInput1"> Dunno </label>
+			<input  id="radioInput1" type="radio" name="radioGroup" value="radioGroupValue1">
+
+			<label for="radioInput2"> Because my boss told me to </label>
+			<input  id="radioInput2" type="radio" name="radioGroup" value="radioGroupValue2">
+
+			<label for="radioInput3"> Generally interested </label>
+			<input  id="radioInput3" type="radio" name="radioGroup" value="radioGroupValue3">
+
+			<label for="radioInput4"> It might come in useful </label>
+			<input  id="radioInput4" type="radio" name="radioGroup" value="radioGroupValue4">
+		</div>
+
+		<div>
+			<label for="select1"> Select </label>
+			<select id="select1" name="select">
+				<option value="" selected="selected">--- Select ---</option>
+				<option value="selectValue1">I found it by accident</option>
+				<option value="selectValue2">Through WDF</option>
+				<option value="selectValue3">Through NetlinQ</option>
+				<option value="selectValue4">Through a search engine</option>
+			</select>
+		</div>
+
+		<input type="checkbox" name="oranges">oranges
+		<input type="checkbox" name="potatoes">potatoes
+		<input type="checkbox" name="tomatoes">tomatoes
+		<input type="checkbox" name="blue whales">blue whales</td>
+
+		<button type="submit" ></button>
+	</form>
+
+	<script>
+
+	$('form').formJSON();
+
+	</script>
+</body>
+</html>
