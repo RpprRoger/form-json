@@ -1,0 +1,38 @@
+{
+	"name": "form-json",
+	"title": "jQuery formJson",
+	"description": "A small jquery plugin which converts forms to JSON and back again",
+	"keywords": [
+		"jquery",
+		"plugins",
+		"form",
+		"forms",
+		"json"
+	],
+	"version": "3.3.1",
+	"author": {
+		"name": "Robert Preus-MacLaren",
+		"email": "rpprroger@gmail.com",
+		"url": "https://github.com/rpprroger"
+	},
+	"maintainers": [
+		{
+			"name": "Robert Preus-MacLaren",
+			"email": "rpprroger@gmail.com",
+			"url": "https://github.com/rpprroger"
+		}
+	],
+	"licenses": [
+		{
+			"type": "GNU",
+			"url": "https://github.com/RpprRoger/form-json/blob/master/LICENSE"
+		}
+	],
+	"bugs": "https://github.com/RpprRoger/form-json/issues",
+	"homepage": "",
+	"docs": "https://github.com/RpprRoger/form-json",
+	"download": "https://github.com/RpprRoger/form-json/archive/master.zip",
+	"dependencies": {
+		"jquery": ">=1.4"
+	}
+}

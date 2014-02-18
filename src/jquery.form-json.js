@@ -13,18 +13,32 @@
 
 	var pluginName = 'formJSON';
 
-	function formJSON( $this, chain ) {
+	function importFromJson( $form, json ) {
 
 	}
 
-	function getJSON( $form ) {
+	function getJsonFromForm( $form ) {
 
 	}
 
 	// A really lightweight plugin wrapper around the constructor,
 	// preventing against multiple instantiations
-	$.fn[ pluginName ] = function ( options ) {
-		debugger;
+	$.fn[ pluginName ] = function ( option ) {
+	
+		var type = typeof option,
+			stringify = true;
+
+		switch( type ) {
+		case 'boolean':
+			stringify = !option;
+			break;
+		case 'string':
+		case 'object':
+			return this.each();
+		default:
+			break;
+		}
+
 	};
 
 })( jQuery, window, document );
