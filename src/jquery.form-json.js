@@ -13,6 +13,14 @@
 
 	var pluginName = 'formJSON';
 
+	function formJSON( options ) {
+
+	}
+
+	$.extend( formJSON, {
+
+	});
+
 	function importFromJson( $form, json ) {
 
 	}
@@ -20,6 +28,8 @@
 	function getJsonFromForm( $form ) {
 
 	}
+
+	function 
 
 	// A really lightweight plugin wrapper around the constructor,
 	// preventing against multiple instantiations
@@ -34,10 +44,11 @@
 			break;
 		case 'string':
 		case 'object':
-			return this.each();
-		default:
-			break;
+			return this.each( importFromJson );
 		}
+
+		return stringify ?
+			$.getJSON( getJsonFromForm( this ) ) : getJsonFromForm( this );
 
 	};
 
